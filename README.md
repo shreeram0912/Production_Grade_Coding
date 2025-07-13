@@ -9,17 +9,17 @@ These is not a real project, but a simple production grade code using functional
 
 ### Folder Structure
 Production_coding/
-└── src/
-    ├── main/
-    │   ├── database/
-    │   │   └── mysql_connector.py
-    │   ├── encrypt_decrypt/
-    │   │   └── encrypt_decrypt.py
-    │   ├── resources/
-    │   │   └── config.ini
-    │   └── main.py
-    └── test/
-        └── scratch_pad.py
+* └── src/
+*    ├── main/
+*    │   ├── database/
+*    │   │   └── mysql_connector.py
+*    │   ├── encrypt_decrypt/
+*    │   │   └── encrypt_decrypt.py
+*    │   ├── resources/
+*    │   │   └── config.ini
+*    │   └── main.py
+*    └── test/
+*        └── scratch_pad.py
         
 * **📁 main/**: The core application folder, where the real work happens. Think of it as the engine room.
 * **📄 main.py**: Startup logic that imports modules and kicks off the workflow—connects to DB, loads config, decrypts passwords, and runs processes.
