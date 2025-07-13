@@ -7,19 +7,22 @@ These is not a real project, but a simple production grade code using functional
 4. Write code in folder structure to access in another file easily.
 5. Create main method for code & use main method to call it.
 
+
 ### Folder Structure
+```
 Production_coding/
-* └── src/
-*    ├── main/
-*    │   ├── database/
-*    │   │   └── mysql_connector.py
-*    │   ├── encrypt_decrypt/
-*    │   │   └── encrypt_decrypt.py
-*    │   ├── resources/
-*    │   │   └── config.ini
-*    │   └── main.py
-*    └── test/
-*        └── scratch_pad.py
+└── src/
+    ├── main/
+    │   ├── database/
+    │   │   └── mysql_connector.py
+    │   ├── encrypt_decrypt/
+    │   │   └── encrypt_decrypt.py
+    │   ├── resources/
+    │   │   └── config.ini
+    │   └── main.py
+    └── test/
+        └── scratch_pad.py
+```
         
 * **📁 main/**: The core application folder, where the real work happens. Think of it as the engine room.
 * **📄 main.py**: Startup logic that imports modules and kicks off the workflow—connects to DB, loads config, decrypts passwords, and runs processes.
@@ -27,7 +30,6 @@ Production_coding/
 * **📁 encrypt_decrypt/encrypt_decrypt.py**: Includes functions to encrypt sensitive data (e.g. passwords) and decrypt it when needed, possibly using cryptography or Fernet
 * **📁 resources/config.ini**: Stores parameters such as database credentials, file paths, API keys, or custom settings. It’s parsed at runtime using configparser.
 * **📁 test/**: The testing folder, where you experiment and validate code before it goes live.
-
 
 
 ### ✨ How to Create This Structure via Terminal (Git Bash)
@@ -41,6 +43,7 @@ Production_coding/
 * touch Production_coding/src/main/resources/config.ini
 * touch Production_coding/src/main/main.py
 * touch Production_coding/src/test/scratch_pad.py
+
 
 ### Push Local Project to GitHub Using Git Bash
 * 1️⃣ Initialize Git in Your Project Folder: sets up your folder as a Git repository "git init"
